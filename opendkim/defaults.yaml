@@ -7,5 +7,6 @@ opendkim:
     UserID: "opendkim:opendkim"
     KeyTable: "/etc/opendkim/KeyTable"
     SigningTable: "/etc/opendkim/SigningTable"
+    TrustedHosts: "/etc/opendkim/TrustedHosts"
   service:
     name: opendkim
