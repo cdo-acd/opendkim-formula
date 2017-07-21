@@ -6,6 +6,6 @@ include:
   - opendkim.config
   - opendkim.service
   - opendkim.key
-  {%- if pillar.get('opendkim:trustedhosts') %}
+  {%- if pillar.get('opendkim:trustedhosts') is defined %}
   - opendkim.trustedhosts
   {%- endif %}
