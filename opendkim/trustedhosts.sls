@@ -16,6 +16,6 @@ opendkim-trustedhosts:
     - require:
       - pkg: opendkim_packages 
     - contents: |
-        {%- for host in pillar.get('opendkim:trustedhosts') %}
+        {%- for host in opendkim.trustedhosts %}
         {{ host }}
         {%- endfor %}
