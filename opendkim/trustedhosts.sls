@@ -5,7 +5,7 @@
 
 opendkim-trustedhosts:
   file.managed:
-    - name: {{ opendkim.conf.TrustedHosts }}
+    - name: {{ opendkim.conf.ExternalIgnoreList }}
     - mode: 644
     - user: root
     - group: root
