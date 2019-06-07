@@ -3,10 +3,10 @@
 opendkim:
   pkg: opendkim
   config: '/etc/opendkim.conf'
-  conf:
-    UserID: "opendkim:opendkim"
-    KeyTable: "/etc/opendkim/KeyTable"
-    SigningTable: "/etc/opendkim/SigningTable"
+#  conf:
+#    UserID: "opendkim:opendkim"
+#    KeyTable: "/etc/opendkim/KeyTable"
+#    SigningTable: "/etc/opendkim/SigningTable"
 #    {%- if pillar.get('opendkim:trustedhosts') is defined %}
 #    ExternalIgnoreList: "/etc/opendkim/TrustedHosts"
 #    InternalHosts: "/etc/opendkim/TrustedHosts"
